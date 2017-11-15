@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css Grids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      .wrap{
+        display: grid;
+        grid-template-columns:70% 30%;
+        /*
+        grid-column-gap:.5em;
+        grid-row-gap: .5em;
+
+        short hand to grid-column-gap & grid-row gap is
+        grid-gap
+        */
+        grid-gap:.5em; 
+      }
+      .wrap > div{
+        padding: 1em;
+        background: #eee;
+      }
+      .wrap > div:nth-child(odd){
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id="side">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste quaerat dolorum ullam possimus repellendus ea in reprehenderit sapiente similique, quidem at corporis architecto sequi explicabo incidunt voluptates excepturi magnam.</p>
+        </div>
+        <div class="main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id="side">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A iste quaerat dolorum ullam possimus repellendus ea in reprehenderit sapiente similique, quidem at corporis architecto sequi explicabo incidunt voluptates excepturi magnam.</p>
+        </div>
+    </div>
+  </body>
+</html>
